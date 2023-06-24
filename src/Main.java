@@ -6,13 +6,13 @@ public class Main {
         System.out.println("PrintOut HomeWork7");
 
 
-        // Task1();
-        // Task2();
-        // Task3();
-        // Task4();
-        //   Task5();
-        //Task6();
-        // Task7();
+        Task1();
+        Task2();
+        Task3();
+        Task4();
+        Task5();
+        Task6();
+        Task7();
         Task8();
 
     }
