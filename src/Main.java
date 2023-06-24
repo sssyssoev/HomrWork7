@@ -24,14 +24,17 @@ public class Main {
         int targetSum = 2459000;
         int month = 0;
 
+
         System.out.println(" Task 1 printout");
 
-        while (currentSum <= targetSum) {
+        do {
+
             System.out.println("Месяц " + month + "  сумма накоплений равна :" + currentSum + "  рублей");
             month = month + 1;
             currentSum = currentSum + monthlyAdd;
-        }
 
+        }  while (currentSum <= targetSum);
+        System.out.println("Потребуется " + month+ "месяцев");
     }
 
     public static void Task2() {
@@ -50,8 +53,8 @@ public class Main {
 
     public static void Task3() {
         int population = 12_000_000;
-        int yearlyBirth = 17;
-        int yearlyDeath = 8;
+        int yearlyBirth = 17*12_000_000/1000;
+        int yearlyDeath = 8*12_000_000/1000;
         int year = 0;
 
         System.out.println("Task 3 printout");
@@ -99,8 +102,6 @@ public class Main {
         while (currentSum < targetSum) {
 
             currentSum = currentSum + currentSum * percentage / 100;
-            //  resDiv6= month % 6;
-            //  System.out.println("month " + month + "  resDiv6" + resDiv6);
 
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + "   накопления:" + currentSum);
@@ -160,19 +161,13 @@ public class Main {
         int startPeriod = 200;
         int finishPeriod = 100;
         int currYear = firstAppearance;
-        // int leftBorder = currentYear - startPeriod;
-        // int rightBorder = currentYear + finishPeriod;
-
-       // System.out.println(leftBorder);
-        // System.out.println(rightBorder);
 
         System.out.println("Task 8 printout");
 
         currYear = firstAppearance;
 
         while (currYear > firstAppearance - startPeriod && currYear < currentYear + finishPeriod) {
-           // System.out.println(currYear);
-            // currYear = currYear + period;
+
             if (currYear >= currentYear - startPeriod && currYear <= currentYear+finishPeriod)
 
                 System.out.println(currYear);
