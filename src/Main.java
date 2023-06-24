@@ -3,7 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("PrintOut HomeWork7");
+        System.out.println("PrintOut HomeWork7. Corrected");
 
 
         Task1();
